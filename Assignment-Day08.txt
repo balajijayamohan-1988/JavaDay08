@@ -1,0 +1,73 @@
+/* Tast 1.1 - Description: Create HashSet for the below values
+Input: List=10,20,30,40,50,60,70,80,90,10,20 */
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+             a.add(10);
+             a.add(20);
+             a.add(30);
+             a.add(40);
+             a.add(50);
+             a.add(60);
+             a.add(70);
+             a.add(80);
+             a.add(90);
+             a.add(10);
+             a.add(20);
+                System.out.println("A values is : "+a);
+        Set<Integer> a1 = new HashSet<>();
+            a1.addAll(a);
+                System.out.println("a1 values is : "+a1);    //dubplicate remoded in set 
+    }
+    
+}
+/* Runtime output
+A values is : [10, 20, 30, 40, 50, 60, 70, 80, 90, 10, 20]
+a1 values is : [80, 50, 20, 70, 40, 10, 90, 60, 30]
+*/
+
+
+
+
+/* Task 1.2: 
+Description: Create a LinkedHashSet for the below values
+Input: List=10,20,30,40,50,60,70,80,90,10,20
+*/
+
+//project Sample
+package org.test;
+import java.util.*;
+public class SampleOne {
+    public static void main(String[] args){
+        List<Integer> a = new LinkedList<>();
+            a.add(10);
+            a.add(20);
+            a.add(30);
+            a.add(40);
+            a.add(50);
+            a.add(60);
+            a.add(70);
+            a.add(80);
+            a.add(90);
+            a.add(10);
+            a.add(10);
+                System.out.println("List a Values is : "+a);
+         Set<Integer> a1 = new LinkedHashSet<>();
+                a1.addAll(a);
+                    System.out.println("set a1 values is : "+a1);       
+    }
+}
+/* Runtime output
+List a Values is : [10, 20, 30, 40, 50, 60, 70, 80, 90, 10, 10]
+set a1 values is : [10, 20, 30, 40, 50, 60, 70, 80, 90]
+*/
+
+
+
+
+
+/* Tast 1.3;
